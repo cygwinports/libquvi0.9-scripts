@@ -1,0 +1,21 @@
+NAME="libquvi0.9-scripts"
+VERSION=0.9.20131130
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="Flash Video download link parser library (data)"
+DESCRIPTION="quvi is a command line tool for parsing flash video download
+links. It supports Youtube and other similar video websites.
+libquvi is a library for parsing flash video download links with C API.
+It is written in C and intended to be a cross-platform library. libquvi
+uses Lua for embeddable scripting."
+HOMEPAGE="http://quvi.sourceforge.net/"
+SRC_URI="mirror://sourceforge/quvi/libquvi-scripts-${VERSION}.tar.xz"
+SRC_DIR="libquvi-scripts-${VERSION}"
+
+ARCH=noarch
+
+src_compile() {
+	cd ${B}
+	cygconf
+	cygmake
+}
