@@ -1,6 +1,6 @@
 NAME="libquvi0.9-scripts"
 VERSION=0.9.20131130
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="Flash Video download link parser library (data)"
 DESCRIPTION="quvi is a command line tool for parsing flash video download
@@ -11,6 +11,7 @@ uses Lua for embeddable scripting."
 HOMEPAGE="http://quvi.sourceforge.net/"
 SRC_URI="mirror://sourceforge/quvi/libquvi-scripts-${VERSION}.tar.xz"
 SRC_DIR="libquvi-scripts-${VERSION}"
+PATCH_URI="http://pkgs.fedoraproject.org/cgit/libquvi-scripts.git/plain/0001-guardian.lua-Update-for-website-changes.patch"
 
 ARCH=noarch
 
